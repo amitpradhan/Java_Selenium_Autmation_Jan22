@@ -2,6 +2,10 @@ package test2;
 
 public class C {
 
+    public static void main(String[] args) {
+        System.out.println("Hi, I am testing GIT remote repo..");
+    }
+
     public static int i =10;
     public String city = "Pune";
     public static void m1(){
