@@ -1,0 +1,35 @@
+1) Install mysql from https://dev.mysql.com/downloads/windows/installer/8.0.html
+2) create database schema using mysql workbench ( create schema schema_name)
+3) create database table -
+CREATE TABLE address (
+    house_no varchar(10),
+    pincode int,
+    area varchar(20),
+    city varchar(20));
+4) Add few data into the table -
+
+insert into address values("a2-102", 123456, "Viman Nagar" , "Pune");
+insert into address values("b2-103", 7665575, "Altrinchan" , "Manchester");
+insert into address values("c2-104", 09876, "Romford" , "London");
+insert into address values("d2-105", 34456, "Andheri" , "Mumbai");
+
+To query database table using JDBC -
+5) Download mysql driver (https://dbschema.com/jdbc-driver/MySql.html)
+6) import package java.sql.*
+7) Load the driver (mysql)
+8) Register the driver
+9) Establish a connection
+10) Create statements
+   3 types of statements -
+    i) Statement
+    ii) PreparedStatement
+    iii) CallablStatement ( we execute stored procedures)
+11) Execute Query -
+     - executeQuery() - fetching data
+     - updateQuery()   - DML - inserting and deleting datas
+
+12) Process the data -
+     - next()
+     - getInt(),getString()
+ 13) Close connection
+
