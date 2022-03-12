@@ -14,7 +14,7 @@ insert into address values("c2-104", 09876, "Romford" , "London");
 insert into address values("d2-105", 34456, "Andheri" , "Mumbai");
 
 To query database table using JDBC -
-5) Download mysql driver (https://dbschema.com/jdbc-driver/MySql.html)
+5) Download mysql driver (https://dbschema.com/jdbc-driver/MySql.html or https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.28)
 6) import package java.sql.*
 7) Load the driver (mysql)
 8) Register the driver
@@ -23,7 +23,7 @@ To query database table using JDBC -
    3 types of statements -
     i) Statement
     ii) PreparedStatement
-    iii) CallablStatement ( we execute stored procedures)
+    iii) Callable Statement ( we execute stored procedures)
 11) Execute Query -
      - executeQuery() - fetching data
      - updateQuery()   - DML - inserting and deleting datas
