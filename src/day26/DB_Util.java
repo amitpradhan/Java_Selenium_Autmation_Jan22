@@ -75,4 +75,16 @@ public class DB_Util {
         }
         return  totalRows;
     }
+
+    public static void insertRow(Connection connection, String newRecord){
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
+            statement.executeUpdate(newRecord);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }
