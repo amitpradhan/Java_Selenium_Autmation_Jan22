@@ -11,6 +11,7 @@ public class DB_Util_Test {
         String db_user_id = "root";
         String db_pwd = "root";
         String query = "select * from students";
+
 //        String query_total_row= "SELECT COUNT(*) AS rowCount FROM ";
         String table_name = "students";
 
@@ -19,6 +20,8 @@ public class DB_Util_Test {
         //Count total rows
        int totalRows= DB_Util.totalRows(db_connection, table_name);
        System.out.println("Total no of rows ->"+totalRows);
+
+        DB_Util.getDataFromDatabase(db_connection,query);
 
         ResultSet studentsData =DB_Util.getDataFromDatabase(db_connection,query);
 
