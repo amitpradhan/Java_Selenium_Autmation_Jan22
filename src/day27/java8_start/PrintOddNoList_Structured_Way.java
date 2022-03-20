@@ -7,7 +7,6 @@ public class PrintOddNoList_Structured_Way {
         List<Integer> list = List.of(12,23,2,31,1,1,12,31,1321);
         printAllOddNumber(list);
     }
-
     private static void printAllOddNumber(List<Integer> list){
         for (Integer i:list ) {
             if(i%2 !=0)
